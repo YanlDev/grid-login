@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Freckle Face', cursive;
+    background: rgb(255, 182, 182);
+    background: #d65d5d;
+
+}
+/* modificando container */
+.container{
+    display: grid;
+    max-width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 300px 100px;
+}
+/* estilos formulario */
+.formulario{
+    grid-column: 2/3;
+    grid-row: 2/-1;
+    border-radius: 7px;
+    border: none;
+    background: #F0F2F5;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    padding: 20px 5px;
+    min-width: 300px;
+}
+/* imagen estilo */
+.image{
+    text-align: center;
+}
+.frase{
+    color: #515B60;
+    text-align: center;
+    font-size: 25px;
+}
+.img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+.inputs{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border:1.5px solid rgb(200 200 200);
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 90%;
+}
+button{
+    background: #e67474;
+    width: 90%;
+    margin:30px auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Freckle Face', cursive;
+}
+button:hover{
+    color: #fff;
+    background: #ff0000;
+}
+
+/* responsive */
+
+@media screen and (max-width:450px){
+
+    .formulario{
+        grid-column:2/3;
+        grid-row:2/4;
+        width: 100%;
+        min-width: 280px;
+    }
+}
